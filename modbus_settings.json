@@ -1,0 +1,49 @@
+{
+  "conn": {
+    "mode": "RTU",
+    "unit_id": "3",
+    "timeout": "5.0",
+    "tcp": {
+      "host": "127.0.0.1",
+      "port": "502"
+    },
+    "rtu": {
+      "port": "",
+      "baud": "19200",
+      "bytesize": "8",
+      "parity": "N",
+      "stopbits": "1"
+    }
+  },
+  "read": {
+    "fc": "Holding Registers",
+    "addr": "412",
+    "count": "20",
+    "decode_type": "raw16",
+    "byte_order": "Big",
+    "word_order": "Big"
+  },
+  "write": {
+    "target": "Holding Registers",
+    "addr": "12",
+    "values": "0x145",
+    "encode_type": "raw16",
+    "byte_order": "Little",
+    "word_order": "Little"
+  },
+  "poll": {
+    "enabled": false,
+    "interval": "1.0"
+  },
+  "log": {
+    "filter": "All",
+    "max_lines": "2000"
+  },
+  "display": {
+    "num_base": "Dec",
+    "bin_group": "16"
+  },
+  "window": {
+    "geometry": "1451x890+18+28"
+  }
+}

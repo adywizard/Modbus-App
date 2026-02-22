@@ -1,0 +1,1 @@
+python -m nuitka --standalone --enable-plugin=tk-inter --windows-console-mode=disable --include-data-files=modbus_settings.json=modbus_settings.json --msvc=latest --windows-icon-from-ico=app.ico --output-filename=ModbusTool.exe --output-dir=build modbus_app.py
