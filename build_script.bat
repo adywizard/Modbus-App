@@ -9,7 +9,7 @@ IF ERRORLEVEL 1 (
 )
 
 REM Compile with Nuitka (standalone, no console, MSVC)
-python -m nuitka --standalone --enable-plugin=tk-inter --include-data-files=modbus_settings.json=modbus_settings.json --windows-console-mode=disable --msvc=latest --output-dir=build --windows-icon-from-ico=app.ico --output-filename=ModbusTool.exe modbus_app.py
+python -m nuitka --standalone --enable-plugin=tk-inter --windows-console-mode=disable --include-data-files=modbus_settings.json=modbus_settings.json --include-data-files=app.ico=app.ico --msvc=latest --windows-icon-from-ico=app.ico --output-filename=ModbusTool.exe --output-dir=build modbus_app.py
 
 IF ERRORLEVEL 1 (
   echo Build failed.

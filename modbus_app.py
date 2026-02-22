@@ -20,6 +20,7 @@ except Exception:
 APP_TITLE = "Modbus Reader/Writer -- Made by Adywizard with help of Copilot"
 DEFAULT_TIMEOUT = 2.0
 SETTINGS_PATH = Path(__file__).resolve().with_name("modbus_settings.json")
+ICON_NAME = Path(__file__).resolve().with_name("app.ico")
 
 # Common baud rates for RTU combobox
 BAUD_RATES = [
@@ -314,7 +315,7 @@ class ModbusApp:
 
         # Window basics
         self.root.title(APP_TITLE)
-        self.root.iconbitmap("app.ico")
+        self.root.iconbitmap(ICON_NAME)
         geom = self.settings.get("window", {}).get("geometry") or "1230x720"
         try:
             self.root.geometry(geom)
