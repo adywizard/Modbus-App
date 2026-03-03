@@ -61,4 +61,4 @@ Default settings (already in repository): [modbus_settings.json](modbus_settings
 ---
 Generated from repository files: [modbus_app.py](modbus_app.py), [modbus_settings.json](modbus_settings.json), [build_script.bat](build_script.bat), [modbus_app.iss](modbus_app.iss), [nuitka.txt](nuitka.txt).
 
-!Screenshot
+![Modbus App](./ModbusApp.png)
